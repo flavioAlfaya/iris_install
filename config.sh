@@ -8,10 +8,13 @@ sudo apt-get upgrade -y
 sudo apt-get install nodejs -y
 
 # Baixa o repositório específico do Git
-git clone https://github.com/nome-do-repositorio.git
+git clone https://github.com/flavioAlfaya/iris.git iris
 
 # Entra na pasta do repositório clonado
-cd nome-do-repositorio
+cd iris
+
+echo "IRIS_PORT = 5000" > .env
+#echo "VARIAVEL2=valor2" >> .env
 
 # Instala as dependências do projeto
 npm install
@@ -20,12 +23,12 @@ npm install
 npm start
 
 # Cria um serviço Systemd para o script
-sudo bash -c 'cat > /etc/systemd/system/nome-do-servico.service <<EOF
+sudo bash -c 'cat > /etc/systemd/system/iris.service <<EOF
 [Unit]
-Description=Meu Script
+Description=inicialização do servidor iris
 
 [Service]
-ExecStart=/caminho/do/meu/script.sh
+ExecStart=/data/data/com.termux/files/home/iris/start.sh
 
 [Install]
 WantedBy=multi-user.target
