@@ -19,9 +19,6 @@ echo "IRIS_PORT = 5000" > .env
 # Instala as dependências do projeto
 npm install
 
-# Inicia o projeto
-npm start
-
 # Cria um serviço Systemd para o script
 sudo bash -c 'cat > /etc/systemd/system/iris.service <<EOF
 [Unit]
@@ -38,4 +35,7 @@ EOF'
 sudo systemctl daemon-reload
 
 # Inicia o serviço automaticamente na inicialização
-sudo systemctl enable nome-do-servico.service
+sudo systemctl enable iris.service
+
+# Inicia o projeto
+npm start
