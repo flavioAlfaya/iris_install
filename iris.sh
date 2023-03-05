@@ -5,7 +5,7 @@ apt-get update
 apt-get upgrade -y
 apt update
 apt upgrade -y
-apt install python3
+apt install -y python3
 
 
 # install Node.js
