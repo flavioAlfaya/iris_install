@@ -4,19 +4,10 @@
 apt-get update
 apt-get upgrade -y
 
-# install wget
-apt-get install wget
-
-# install python
-wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz -y
-tar xzf Python-3.9.1.tgz
-cd Python-3.9.1
-/configure --enable-optimizations
-make -j 2
-make alt install -y
 
 # install Node.js
 apt-get install nodejs -y
+apt-get install npm -y
 
 # go to root folder
 cd ..
