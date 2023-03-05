@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Atualiza os pacotes do sistema
+# Updates system packeges
 apt-get update
 apt-get upgrade -y
 
@@ -15,25 +15,28 @@ cd Python-3.9.1
 make -j 2
 make alt install
 
-# Instala o Node.js
+# install Node.js
 apt-get install nodejs -y
 
-# Vai para a pasta raiz
+# go to root folder
 cd ..
 
-# Baixa o repositório específico do Git
+# download repository from Git
 git clone https://github.com/flavioAlfaya/iris.git iris
 
-# Entra na pasta do repositório clonado
+# go to cloned folder
 cd iris
 
 echo "IRIS_PORT = 5000" > .env
 echo "IRIS_DB=irisDB" >> .env
 
-# Instala as dependências do projeto
+# update npm version 
+npm install -g npm
+
+# isntall project dependencies 
 npm install
 
-# Inicia o projeto
+# start projeto
 npm start
 
 # # Cria um serviço Systemd para o script
