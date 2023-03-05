@@ -4,8 +4,8 @@
 apt-get update
 apt-get upgrade -y
 
-# instala o sudo
-
+# instala o systemctl
+apt-get -y install systemctl
 
 # Instala o Node.js
 apt-get install nodejs -y
