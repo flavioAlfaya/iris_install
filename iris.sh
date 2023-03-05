@@ -12,10 +12,13 @@ apt install -y python3
 apt-get install npm -y
 
 # install Node.js
-apt-get install nodejs nodejs-legacy -y
+apt-get install nodejs -y
+
+cd /usr/bin 
+ln -s node nodejs.
 
 # go to root folder
-cd ..
+cd /data/data/com.termux/files/home/iris
 
 # download repository from Git
 git clone https://github.com/flavioAlfaya/iris.git iris
@@ -26,8 +29,7 @@ cd iris
 echo "IRIS_PORT = 5000" > .env
 echo "IRIS_DB=irisDB" >> .env
 
-
-# isntall project dependencies 
+# install project dependencies 
 npm install
 
 # start projeto
