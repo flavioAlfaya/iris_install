@@ -3,6 +3,9 @@
 # Updates system packeges
 apt-get update
 apt-get upgrade -y
+apt update
+apt upgrade -y
+apt install python3
 
 
 # install Node.js
