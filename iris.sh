@@ -30,9 +30,6 @@ cd iris
 echo "IRIS_PORT = 5000" > .env
 echo "IRIS_DB=irisDB" >> .env
 
-# update npm version 
-npm install -g npm
-
 # isntall project dependencies 
 npm install
 
