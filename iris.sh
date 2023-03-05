@@ -14,12 +14,6 @@ apt-get install npm -y
 # install Node.js
 apt-get install nodejs -y
 
-cd /usr/bin 
-ln -s node nodejs.
-
-# go to root folder
-cd /data/data/com.termux/files/home/iris
-
 # download repository from Git
 git clone https://github.com/flavioAlfaya/iris.git iris
 
