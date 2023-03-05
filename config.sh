@@ -14,7 +14,7 @@ git clone https://github.com/flavioAlfaya/iris.git iris
 cd iris
 
 echo "IRIS_PORT = 5000" > .env
-#echo "VARIAVEL2=valor2" >> .env
+echo "IRIS_DB=irisDB" >> .env
 
 # Instala as dependências do projeto
 npm install
