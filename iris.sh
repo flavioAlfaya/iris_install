@@ -3,9 +3,9 @@
 # Atualiza os pacotes do sistema
 apt-get update
 apt-get upgrade -y
+apt install wget build-essential libreadline-gplv2-dev libncursesw5-dev \
 
-# instala o systemctl
-apt-get -y install systemctl
+wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz
 
 # Instala o Node.js
 apt-get install nodejs -y
