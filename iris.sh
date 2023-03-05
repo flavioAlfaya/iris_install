@@ -3,7 +3,7 @@
 # Atualiza os pacotes do sistema
 apt-get update
 apt-get upgrade -y
-apt install wget build-essential libreadline-gplv2-dev libncursesw5-dev \
+apt-get install wget
 
 wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz
 
@@ -53,6 +53,3 @@ chmod +x /etc/init.d/iris.sh
 # Create the service symlink and enable it
 update-rc.d iris.sh defaults
 systemctl enable iris.sh
-
-
-
