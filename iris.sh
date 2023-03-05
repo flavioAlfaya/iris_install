@@ -8,8 +8,10 @@ apt update
 apt upgrade -y
 apt install -y python3
 
+apt-get install npm -y
+
 # install Node.js
-apt-get install nodejs-legacy -y
+apt-get install nodejs nodejs-legacy -y
 
 # go to root folder
 cd ..
