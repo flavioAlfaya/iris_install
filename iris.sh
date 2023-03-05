@@ -26,6 +26,9 @@ echo "IRIS_DB=irisDB" >> .env
 # install project dependencies 
 npm install
 
+# install sqlite3
+npm install sqlite3 --build-from-source --sqlite=/data/data/com.termux/files/usr/bin/sqlite3
+
 # start projeto
 npm start
 
