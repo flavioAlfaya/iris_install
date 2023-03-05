@@ -9,7 +9,7 @@ install the termux app
 
 To install, follow these steps:
 
-1. Recive or download the iris.sh
+1. Recive or download the iris.sh in your mobile
 2. run 
 ```
 chmod 777 iris.sh
@@ -24,4 +24,4 @@ chmod 777 iris.sh
 ## 🤝 To make your life easier
 
 Download the APP vysor.
-With this application you can use your cell phone from your computer, just follow the steps described in the application itself
+With this application you can use your mobile from your computer, just follow the steps described in the application itself
