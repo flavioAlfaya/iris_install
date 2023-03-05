@@ -3,14 +3,20 @@
 # Updates system packeges
 apt-get update
 apt-get upgrade -y
-apt update
-apt upgrade -y
-apt install -y python3
 
+# install wget
+apt-get install wget
+
+# install python
+wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz
+tar xzf Python-3.9.1.tgz
+cd Python-3.9.1
+/configure --enable-optimizations
+make -j 2
+make alt install
 
 # install Node.js
-apt-get install nodejs -y
-apt-get install npm -y
+apt-get install nodejs-legacy -y
 
 # go to root folder
 cd ..
@@ -25,7 +31,7 @@ echo "IRIS_PORT = 5000" > .env
 echo "IRIS_DB=irisDB" >> .env
 
 # update npm version 
-npm install npm
+npm install -g npm
 
 # isntall project dependencies 
 npm install
