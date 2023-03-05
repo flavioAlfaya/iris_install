@@ -5,7 +5,8 @@ apt-get update
 apt-get upgrade -y
 
 apt update
-apt upgrade -y
+apt full-upgrade -y
+apt install build-essential git curl
 apt install -y python3
 
 apt-get install npm -y
