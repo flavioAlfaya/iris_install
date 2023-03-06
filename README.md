@@ -3,6 +3,7 @@
 ## 💻 Firstly
 
 Before you begin, make sure you are connecterd to the internet and met the following requirements:
+
 install the termux app
 
 ## 🚀 Installing
